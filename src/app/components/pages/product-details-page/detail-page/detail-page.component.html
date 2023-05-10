@@ -1,0 +1,111 @@
+<div>
+  <div class="grid flex justify-content-around m-4">
+    <div class="sm:col-12 lg:col-5 m-5 align-items-center flex image-food">
+      <div class="img-product-detail justify-content-center align-items-center">
+        <img src="../../../../../{{foodItem.imageUrl}}" width="800" class="border-round-3xl w-full" />
+      </div>
+    </div>
+    <div class="sm:col-12 lg:col-4 m-5 info-food">
+      <h1>
+        {{foodItem.name}}
+        <p-button [icon]="foodItem.favorite ? 'pi pi-heart-fill' : 'pi pi-heart'" styleClass="p-button-danger"></p-button>
+      </h1>
+      <div class="card flex">
+        <p-rating [(ngModel)]="foodItem.stars" [cancel]="false"></p-rating>
+      </div>
+      <div class="mt-4 inline-block flex">
+        <h4 class="mr-2">Origins: </h4>
+        <div *ngFor="let item of foodItem.origins" class="flex justify-content-center align-items-center text-center">
+          <p-tag value={{item}}  class="mr-3 tag" [style]="{ 'background': 'black'}"></p-tag>
+        </div>
+      </div>
+      <h4>
+        Pizza, dish of Italian origin consisting of a flattened disk of bread
+        dough topped with some combination of olive oil, oregano, tomato,
+        olives, mozzarella or other cheese, and many other ingredients, baked
+        quickly—usually, in a commercial setting, using a wood-fired oven heated
+        to a very high temperature—and served hot.
+      </h4>
+
+      <div class="mt-2 inline-block flex">
+        <h4 class="mr-2">Tags: </h4>
+        <div class="flex justify-content-center align-items-center text-center" *ngFor="let item of foodItem.tags">
+          <p-tag severity="danger" value=#{{item}}  class="mr-3 tag"></p-tag>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>Time to cook about <span class="font-bold"> {{foodItem.cookTime}} </span> minutes</p>
+      </div>
+      <p class="price">Price : <span class="cash">{{foodItem.price}} $</span></p>
+      <div class="food-btn">
+        <button
+          pButton
+          pripple
+          type="button"
+          label="Add to cart"
+          class="p-element p-ripple w-full p-button p-component add"
+          (click)="addToCart(foodItem)"
+        >
+          <span
+            class="p-button-icon p-button-icon-left pi pi-shopping-cart ml-3" style="font-size: 1.5rem"
+          ></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <p-divider align="center">
+    <span class="font-bold">Customer Review</span>
+  </p-divider>
+  <div class="grid">
+    <div class="lg:col-4 sm:col-12 cmt-1">
+      <div class="image-avatar text-center">
+        <img src="../../../../assets/images/avatar/images.jpg" alt="Image" width="50%" class="avatar-1" />
+      </div>
+      <div class="comment ">
+        <h1 class="flex justify-content-center">User 1</h1>
+        <p-rating [(ngModel)]="value1" [cancel]="false" class="flex justify-content-center"
+          [readonly]="true"></p-rating>
+        <h4 class="flex m-3">
+          This cozy restaurant has left the best impressions! Hospitable hosts,
+          delicious dishes, beautiful presentation, wide wine list and wonderful
+          dessert. I recommend to everyone! I would like to come back here again
+          and again.
+        </h4>
+      </div>
+    </div>
+    <div class="lg:col-4 sm:col-12 cmt-2">
+      <div class="image-avatar text-center">
+        <img src="../../../../assets/images/avatar/images.jpg" alt="Image" width="50%" class="avatar-1" />
+      </div>
+
+      <div class="comment">
+        <h1 class="flex justify-content-center">User 2</h1>
+        <p-rating [(ngModel)]="value2" [cancel]="false" class="flex justify-content-center"
+          [readonly]="true"></p-rating>
+        <h4 class="flex m-3">
+          This cozy restaurant has left the best impressions! Hospitable hosts,
+          delicious dishes, beautiful presentation, wide wine list and wonderful
+          dessert. I recommend to everyone! I would like to come back here again
+          and again.
+        </h4>
+      </div>
+    </div>
+    <div class="lg:col-4 sm:col-12 cmt-3">
+      <div class="image-avatar text-center">
+        <img src="../../../../assets/images/avatar/images.jpg" alt="Image" width="50%" class="avatar-1" />
+      </div>
+      <div class="comment">
+        <h1 class="flex justify-content-center">User 3</h1>
+        <p-rating [(ngModel)]="value3" [cancel]="false" class="flex justify-content-center"
+          [readonly]="true"></p-rating>
+        <h4 class="flex m-3">
+          This cozy restaurant has left the best impressions! Hospitable hosts,
+          delicious dishes, beautiful presentation, wide wine list and wonderful
+          dessert. I recommend to everyone! I would like to come back here again
+          and again.
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>

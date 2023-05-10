@@ -1,0 +1,48 @@
+<div class="col-12 md:col-6 lg:col-3 mb-5 md:mb-0 w-full">
+  <div class="p-2 border-item" >
+    <div class="food-img" routerLink="/foods/{{foodItem.name}}">
+      <img
+        class="foodImage"
+        width="270"
+        height="320"
+        src="{{ foodItem.imageUrl }}"
+        alt=""
+      />
+    </div>
+    <div class="food-body flex">
+      <div class="food-title w-10">
+        <h3 routerLink="/foods/{{foodItem.name}}" class="foodName">{{ foodItem.name }}</h3>
+        <span>Price: {{ foodItem.price }}</span>
+        <span class="block">Cook time: {{ foodItem.cookTime }}</span>
+      </div>
+
+      <span class="flex align-items-center justify-content-center">
+        <p-button
+          [icon]="foodItem.favorite ? 'pi pi-heart-fill' : 'pi pi-heart'"
+          styleClass="p-button-rounded p-button-help p-button-outlined"
+        ></p-button>
+      </span>
+    </div>
+    <div class="food-rating my-3">
+      <p-rating
+        [(ngModel)]="foodItem.stars"
+        [readonly]="true"
+        [cancel]="false"
+      ></p-rating>
+    </div>
+    <div class="food-btn">
+      <button
+        pButton
+        pripple
+        type="button"
+        label="Add to cart"
+        class="p-element p-ripple w-full p-button p-component"
+        (click)="addToCart(foodItem)"
+      >
+        <span
+          class="p-button-icon p-button-icon-left pi pi-shopping-cart"
+        ></span>
+      </button>
+    </div>
+  </div>
+</div>

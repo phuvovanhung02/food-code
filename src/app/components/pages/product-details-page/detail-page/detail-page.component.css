@@ -1,0 +1,77 @@
+.logo-img {
+    height: 40px;
+  }
+.price{
+  font-size: 35px;
+  color: rgba(128, 128, 128, 0.5);
+}
+.cash{
+  color:red;
+}
+.add{
+  color: white;
+  background-color: red;
+  border:none;
+  font-size: 25px;
+  width: 100%;
+  padding:10px;
+  border-radius: 10rem;
+  outline: none;
+}
+.add:hover{
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.733);
+  transform: translateY(-5px);
+}
+.user-1{
+  display: block;
+}
+.avatar-1{
+  border-radius: 100%;
+}
+@keyframes slideInLeft {
+  from{
+    transform: translateX(-300px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+.image-food{
+  animation: slideInLeft 0.5s ease-in 0s 1 normal none;
+}
+
+@keyframes slideInRight {
+  from{
+    transform: translateX(300px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+.info-food{
+  animation: slideInRight 0.5s ease-in 0s 1 normal none;
+}
+
+.tag:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cmt-3{
+  animation: slideInRight 0.5s ease-in 0s 1 normal none;
+}
+.cmt-1{
+  animation: slideInLeft 0.5s ease-in 0s 1 normal none;
+}
+
+@keyframes slideUp {
+  from{
+    transform: translateY(300px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+.cmt-2{
+  animation: slideUp 0.5s ease-in 0s 1 normal none;
+}

@@ -1,0 +1,7 @@
+<app-header></app-header>
+
+<div >
+  <div *ngFor="let item of foodsArray | async">
+    <app-detail-page [foodItem]="item"></app-detail-page>
+  </div>
+</div>

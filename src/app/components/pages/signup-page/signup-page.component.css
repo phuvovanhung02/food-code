@@ -1,0 +1,127 @@
+:host ::ng-deep {
+}
+
+:host ::ng-deep .p-button {
+  width: 100%;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  /* background-color: var(--primary-black);
+  border-color: var(--primary-black); */
+}
+
+.p-button:hover {
+  background-color: var(--primary-black);
+  opacity: 0.8;
+}
+
+.signup-container {
+  background-image: url("../../../../assets/images/login/loginBg.png");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  z-index: -99;
+}
+
+.signup-form-section {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  width: 500px;
+  top: 21%;
+  left: 50%;
+  gap: 2rem;
+  z-index: 10;
+}
+
+.signup-content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 !important;
+}
+
+.signup-content-section {
+  padding: 2rem 0;
+}
+
+h1 {
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+.signup-heading {
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+
+.signup-small-p {
+  margin-top: 1rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.signup-submit-btn {
+  width: 150%;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.signup-userdata {
+  display: flex;
+  flex-direction: column;
+  width: 150%;
+  gap: 2rem;
+}
+
+.signup-forgot-password {
+  font-style: italic;
+  width: 150%;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  color: var(--status-inactive);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .signup-form-section {
+    left: 25%;
+  }
+}
+
+.signup-error {
+  color: red;
+  margin-top: 0.5rem;
+  margin-left: 0.15rem;
+}
+.mgt {
+  margin-top: 0.5rem;
+}
+.eye-pw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0 24px;
+  cursor: pointer;
+}

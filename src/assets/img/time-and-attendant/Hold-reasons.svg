@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="30 25 200 100">
+  <g id="Work_Order_Issue" data-name="Work Order Issue" transform="translate(-4650.502 -968.829)">
+    <rect id="Rectangle_501" data-name="Rectangle 501" width="260" height="260" transform="translate(4650.502 968.829)" fill="none"/>
+    <g id="Group_2072" data-name="Group 2072" transform="translate(-6 13.724)">
+
+      <g id="Group_373" data-name="Group 373" transform="translate(2643 -3093.326)">
+        <g id="Group_306" data-name="Group 306" transform="translate(2191.099 4061.536)">
+          <path id="Path_504" data-name="Path 504" d="M129,15.711h30.242L150.6,5.5" transform="translate(-129 -5.5)" fill="none" stroke="#21bdca" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+          <path id="Path_505" data-name="Path 505" d="M129,70.5h30.242L150.6,80.711" transform="translate(-129 -19.443)" fill="none" stroke="#21bdca" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+          <path id="Path_506" data-name="Path 506" d="M129,45.5h6.466" transform="translate(-129 -14.08)" fill="none" stroke="#21bdca" stroke-linecap="round" stroke-width="9"/>
+          <path id="Path_511" data-name="Path 511" d="M129,45.5h12.438" transform="translate(-111.196 -14.08)" fill="none" stroke="#21bdca" stroke-linecap="round" stroke-width="9"/>
+        </g>
+        <path id="Path_510" data-name="Path 510" d="M53.363,5H6V78.725h94.725V5Zm0,0V17.064" transform="translate(2069.678 4057.596)" fill="none" stroke="#5473e8" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+        <path id="Union_17" data-name="Union 17" d="M0,52.725H0ZM.892,37.533h0ZM61.661,18.768a13.4,13.4,0,1,1,13.4,13.4A13.4,13.4,0,0,1,61.661,18.768Zm-45.577,0a13.4,13.4,0,1,1,13.406,13.4A13.405,13.405,0,0,1,16.084,18.768Zm91.151-.894a13.4,13.4,0,1,1,13.4,13.4A13.4,13.4,0,0,1,107.235,17.874ZM.892,0h0Z" transform="translate(2070.317 4136.6)" fill="none" stroke="#1b2f88" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,157 @@
+{
+  "class": {
+    "id": 1,
+    "trainingProgramId": 1,
+    "name": "Fresher Develop Operation",
+    "code": "a123",
+    "createOn": "14/03/2023",
+    "createBy": "Tu My",
+    "campus": "Ho Chi Minh",
+    "FSU": "Can Tho",
+    "status": "Planning",
+    "classTime": {
+      "timefrom": "21:00",
+      "timeto": "21:00"
+    },
+    "location": ["Ftown1", "Ftown2"],
+    "trainer": [
+      {
+        "trainerId": 1,
+        "fullname": "Tran Tu My",
+        "email": "Myttce160318@fpt.edu.vn",
+        "phoneNumber": "0123456789",
+        "img": ""
+      },
+      {
+        "trainerId": 2,
+        "fullname": "Nguyen Nhat Hung",
+        "email": "hungnnce160318@fpt.edu.vn",
+        "phoneNumber": "0834416369",
+        "img": ""
+      },
+      {
+        "trainerId": 3,
+        "fullname": "Tran Nguyen Dai Hung",
+        "email": "hungntdce160996@fpt.edu.vn",
+        "phoneNumber": "0123456789",
+        "img": ""
+      },
+      {
+        "trainerId": 4,
+        "fullname": "Tran Tu My",
+        "email": "Myttce160318@fpt.edu.vn",
+        "phoneNumber": "0123456789",
+        "img": ""
+      }
+    ],
+    "admin": [
+      {
+        "adminId": 1,
+        "fullname": "Tran Tu My",
+        "email": "Myttce160318@fpt.edu.vn",
+        "phoneNumber": "0123456789"
+      },
+      {
+        "trainerId": 2,
+        "fullname": "Nguyen Nhat Hung",
+        "email": "hungnnce160318@fpt.edu.vn",
+        "phoneNumber": "0123456789",
+        "img": ""
+      }
+
+    ],
+    "fsu": "FHM",
+    "classTimeframe": [
+
+      {
+        "date": "2021-06-03",
+        "adminId": 1,
+        "list": [
+          {
+            "unitId": 1,
+            "trainerId": 1,
+            "location": "F-town-1"
+          },
+          {
+            "unitId": 2,
+            "trainerId": 1,
+            "location": "F-town-2"
+          },
+          {
+            "unitId": 3,
+            "trainerId": 1,
+            "location": "F-town-2"
+          }
+        ]
+      },
+      {
+        "date": "2021-06-01",
+        "dayNo": 1,
+        "adminId": 1,
+        "list": [
+          {
+            "unitId": 1,
+            "trainerId": 1,
+            "location": "F-town-1"
+          },
+          {
+            "unitId": 2,
+            "trainerId": 1,
+            "location": "F-town-2"
+          }
+        ]
+      },
+      {
+        "date": "2021-06-05",
+        "adminId": 1,
+        "list": [
+          {
+            "unitId": 1,
+            "trainerId": 1,
+            "location": "F-town-1"
+          },{
+            "unitId": 2,
+            "trainerId": 1,
+            "location": "F-town-2"
+          }
+        ]
+      },
+      {
+        "date": "2021-06-09",
+        "adminId": 1,
+        "list": [
+          {
+            "unitId": 1,
+            "trainerId": 1,
+            "location": "F-town-1"
+          },{
+            "unitId": 2,
+            "trainerId": 1,
+            "location": "F-town-2"
+          }
+        ]
+      },
+      {
+        "date": "2021-06-11",
+        "adminId": 1,
+        "list": [
+          {
+            "unitId": 1,
+            "trainerId": 1,
+            "location": "F-town-1"
+          },{
+            "unitId": 2,
+            "trainerId": 1,
+            "location": "F-town-2"
+          }
+        ]
+      }
+
+    ],
+    "listDateHighlight": ["12/02/2023", "13/02/2023", "14/02/2023"],
+    "classAttendeePlanned": 10,
+    "classAttendeeAccepted": 9,
+    "classAttendeeActual": 9,
+    "attendeeType": "Fresher hung"
+  }
+}

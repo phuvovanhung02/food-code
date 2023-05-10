@@ -1,0 +1,6 @@
+*:focus {
+    outline: 0 !important;
+    // just comment by bug from req of GE project
+    // -webkit-box-shadow: none !important;
+    // box-shadow: none !important;
+}

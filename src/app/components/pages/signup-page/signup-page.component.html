@@ -1,0 +1,95 @@
+<!-- For Form signup -->
+<div class="signup-container">
+  <!-- For signup Heading -->
+  <div class="signup-form-section">
+    <div class="signup-content-section">
+      <h1 class="signup-heading">Register</h1>
+    </div>
+
+    <form class="signup-form" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <div class="p-grid p-fluid signup-userdata">
+        <div class="p-col-12 p-md-4">
+          <span class="p-float-label">
+            <input
+              id="float-input"
+              type="text"
+              pInputText
+              formControlName="name"
+            />
+            <label for="float-input">Name</label>
+          </span>
+        </div>
+
+        <div class="p-col-12 p-md-4">
+          <span class="p-float-label">
+            <input id="email" type="email" pInputText formControlName="email" />
+            <label for="float-input">Enter Email</label>
+          </span>
+        </div>
+
+        <div class="p-col-12 p-md-4">
+          <span class="p-float-label">
+            <input
+              id="float-input"
+              id="password"
+              type="{{ showPassword ? 'text' : 'password' }}"
+              pInputText
+              formControlName="password"
+            />
+            <label for="float-input">Password</label>
+
+            <i
+              class="eye-pw"
+              (click)="togglePasswordVisibility()"
+              [ngClass]="showPassword ? 'pi pi-eye-slash' : 'pi pi-eye'"
+            ></i>
+          </span>
+        </div>
+
+        <div class="p-col-12 p-md-4">
+          <span class="p-float-label">
+            <input
+              id="float-input"
+              id="confirmPassword"
+              type="{{ showConfirmPassword ? 'text' : 'password' }}"
+              pInputText
+              formControlName="confirmPassword"
+            />
+            <label for="float-input">Confirm Password</label>
+            <i
+              class="eye-pw"
+              (click)="toggleConfirmPasswordVisibility()"
+              [ngClass]="showConfirmPassword ? 'pi pi-eye-slash' : 'pi pi-eye'"
+            ></i>
+          </span>
+        </div>
+
+        <div class="p-col-12 p-md-4">
+          <span class="p-float-label">
+            <input
+              id="float-input"
+              type="text"
+              pInputText
+              formControlName="address"
+            />
+            <label for="float-input">Address</label>
+          </span>
+        </div>
+      </div>
+
+      <div class="p-col-12 p-md-4 signup-forgot-password">
+        <p-button
+          [disabled]="signupForm!.invalid"
+          label="Sign up"
+          type="submit"
+        ></p-button>
+
+        <div class="mgt">
+          Already have an account? <u><a routerLink="/login">Sign in</a></u>
+        </div>
+      </div>
+
+      <div class="p-col-12"></div>
+    </form>
+  </div>
+</div>

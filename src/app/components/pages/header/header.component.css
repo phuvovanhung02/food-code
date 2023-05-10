@@ -1,0 +1,35 @@
+.logo-img {
+  height: 40px;
+}
+.cart-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-mask {
+  top: calc(100% - 890px);
+}
+.navbar-mask-item:not(:last-child) {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+@media (max-width: 992px) {
+  .hidden-sm-md {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}

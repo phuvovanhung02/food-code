@@ -1,0 +1,15 @@
+.border-item {
+  border: 1px solid #dfe7ef;
+  border-radius: 5px;
+}
+.foodName:hover{
+  cursor: pointer;
+  color:blue;
+}
+.foodImage:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.food-img{
+  overflow: hidden;
+}

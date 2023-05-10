@@ -1,0 +1,141 @@
+<div class="main">
+  <app-header></app-header>
+  <section>
+    <div class="section-body flex flex-wrap justify-content-center p-3">
+      <div class="section-body-left sm:col-12 lg:col-3">
+        <div class="avatar">
+          <div class="avatar-wrap flex justify-content-center">
+            <img
+              class="avatar-img"
+              src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"
+              alt="UserImg"
+            />
+          </div>
+          <br />
+          <div class="router-bar">
+            <ul class="p-0">
+              <li class="text-center">
+                <a href="" routerLink="/home">
+                  <i class="pi pi-home mx-2"><span class="mx-2">Home</span> </i>
+                </a>
+              </li>
+              <li class="text-center">
+                <a href="" routerLink="/profile">
+                  <i class="pi pi-user mx-2"
+                    ><span class="mx-2">My Profile</span></i
+                  >
+                </a>
+              </li>
+              <li class="text-center">
+                <a href="" routerLink="/profile">
+                  <i class="pi pi-sign-out mx-2"
+                    ><span class="mx-2">Sign Out</span></i
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="section-body-right sm:col-12 lg:col-6"
+        [formGroup]="profileForm"
+        (ngSubmit)="saveProfile()"
+      >
+        <form>
+          <div class="profile">
+            <h2 class="text-center">User Profile</h2>
+            <form
+              class="profile-form mx-4"
+              [formGroup]="profileForm"
+              (ngSubmit)="saveProfile()"
+            >
+              <div class="login-userdata">
+                <div class="col-12 my-2">
+                  <label for="email">Enter Email: </label>
+                  <div class="inputEdit">
+                    <input
+                      id="email"
+                      type="email"
+                      pInputText
+                      formControlName="email"
+                      [readOnly]="isReadonly"
+                    />
+                    <a class="edit" (click)="toggleReadonly()"
+                      ><i class="pi pi-pencil m-3"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-12 my-2">
+                  <label for="name">Enter Name:</label>
+                  <div class="inputEdit">
+                    <input
+                      id="name"
+                      type="text"
+                      pInputText
+                      formControlName="name"
+                      [readOnly]="isReadonly"
+                    />
+                    <a class="edit" (click)="toggleReadonly()"
+                      ><i class="pi pi-pencil m-3"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-12 my-2">
+                  <label for="password">Password:</label>
+                  <div class="inputEdit">
+                    <input
+                      id="password"
+                      type="password"
+                      pInputText
+                      formControlName="password"
+                      readonly
+                      placeholder="*********"
+                    />
+                    <a class="edit" routerLink="/profile/edit">
+                      <span><i class="pi pi-file-edit m-3"></i></span
+                    ></a>
+                  </div>
+                </div>
+
+                <div class="col-12 my-2">
+                  <label for="address">Address:</label>
+                  <div class="inputEdit">
+                    <input
+                      id="address"
+                      type="text"
+                      pInputText
+                      formControlName="address"
+                      [readOnly]="isReadonly"
+                    />
+                    <a class="edit" (click)="toggleReadonly()"
+                      ><i class="pi pi-pencil m-3"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card flex justify-content-around mb-4">
+                  <div class="">
+                    <button Class="cancel text-center px-4 py-2 ">
+                      <i class="pi pi-angle-double-left"></i> Cancel
+                    </button>
+                  </div>
+                  <div class="">
+                    <p-toast></p-toast>
+                    <button class="save text-center px-4 py-2" (click)="show()">
+                      <i class="pi pi-save mr-2"></i>Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </form>
+        <br />
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="160" viewBox="30 25 200 100">
+  <g id="Workflow_list" data-name="Workflow list" transform="translate(-11945 -2983)">
+    <rect id="Rectangle_508" data-name="Rectangle 508" width="260" height="160" transform="translate(11945 2983)" fill="none"/>
+    <g id="Group_2076" data-name="Group 2076">
+      <g id="Group_326" data-name="Group 326" transform="translate(9009 -3690)">
+        <path id="Path_529" data-name="Path 529" d="M63.813,37.188H5V5H105.64v5.22m0,13.4V10.22m0,0" transform="translate(2999.68 6748.884)" fill="none" stroke="#5473e8" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+        <path id="Path_530" data-name="Path 530" d="M86.736,186.393,63,161.839l8.185-4.911,15.551,4.911L85.918,116c0-3,1.473-9,7.366-9s7.366,6,7.366,9v22.918l27.828,14.733-8.185,31.921Z" transform="translate(2992 6660.804)" fill="none" stroke="#21bdca" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+        <g id="Rectangle_445" data-name="Rectangle 445" transform="translate(3000 6703)" fill="none" stroke="#1b2f88" stroke-linecap="round" stroke-linejoin="round" stroke-width="10">
+          <rect width="129" height="35" stroke="none"/>
+          <rect x="5" y="5" width="119" height="25" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

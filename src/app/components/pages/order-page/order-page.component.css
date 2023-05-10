@@ -1,0 +1,95 @@
+.border {
+    border: 5px solid black;
+    border-radius: 2rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    overflow: scroll;
+}
+
+.border-img {
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+#map {
+    height: 100%;
+}
+
+.map-frame {
+    border: 2px solid black;
+    height: 600px;
+    width: 100%;
+}
+
+.btn-delete {
+    font-size: 12px;
+    width: 134px;
+}
+
+.food-img {
+    height: 100px;
+    width: 100px;
+}
+
+.border-payment {
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 0.5rem;
+}
+
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+@media (max-width: 576px) {
+    .mobile-list-food-items {
+        margin-right: 5px;
+        width: 100%;
+    }
+
+    .mobile-list-food-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mobile-user-infor {
+        margin-right: 5px;
+        width: 100%;
+    }
+
+    .mobile-list-food-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .border-img {
+        border: 2px solid gray;
+        border-radius: 5px;
+    }
+
+    .mobile-content-item {
+        font-size: 13px;
+    }
+
+    .btn-delete-mobile {
+        font-size: 12px;
+        width: 50%;
+    }
+
+    .btn-delete-mobile span {
+        display: none;
+    }
+    
+    .btn-delete {
+        display: flex;
+        justify-content: center;
+    }
+
+    .delete-txt {
+        margin-left: 10px;
+    }
+}

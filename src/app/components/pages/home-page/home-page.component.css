@@ -1,0 +1,36 @@
+.btn-tag {
+  background-color: #f0c14b;
+  border: 1px solid #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+.tag-list {
+  list-style-type: none;
+  padding: 0;
+}
+.tag-item {
+  margin: 0 8px;
+  
+}
+.tag-link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding: 4px;
+  border: 1px solid black;
+}
+.tag-link:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .tag-item {
+    margin: 12px 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tag-item {
+    margin: 12px 8px;
+  }
+}

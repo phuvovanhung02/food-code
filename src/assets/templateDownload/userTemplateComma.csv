@@ -1,0 +1,3 @@
+Name,Email,Phone,Date_of_Birth,Role,Level,Status,Gender,
+#Example Template: Insert User with this format (Must Insert with Correct Format.)
+#Name, #email@example.com, #09xxxxxxxx (x is number), #01/01/2000 (dd/MM/yyyy), #Super Admin (Trainee...), #AA (AB...), #In Class (Off Class...), #Male or Female

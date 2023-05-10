@@ -1,0 +1,134 @@
+{
+
+  "data": [
+    {
+      "id": "1",
+      "roleName" : "Super Admin",
+      "permission": [
+        {
+          "permissionName": "syllabus",
+          "permissionValue": ""
+        },
+        {
+          "permissionName": "trainingProgram",
+          "permissionValue": "View"
+        },
+        {
+          "permissionName": "class",
+          "permissionValue": "Create"
+        },
+        {
+          "permissionName": "learningMaterial",
+          "permissionValue": "Access denied"
+        },
+        {
+          "permissionName": "user",
+          "permissionValue": "View"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "roleName" : "Class Admin",
+      "permission": [
+        {
+          "permissionName": "syllabus",
+          "permissionValue": "View"
+        },
+        {
+          "permissionName": "trainingProgram",
+          "permissionValue": "View"
+        },
+        {
+          "permissionName": "class",
+          "permissionValue": "Access denied"
+        },
+        {
+          "permissionName": "learningMaterial",
+          "permissionValue": "View"
+        },
+        {
+          "permissionName": "user",
+          "permissionValue": "View"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "roleName" : "Trainer",
+      "permission": [
+        {
+          "permissionName": "syllabus",
+          "permissionValue": "View"
+        },
+        {
+          "permissionName": "trainingProgram",
+          "permissionValue": "View"
+        },
+        {
+          "permissionName": "class",
+          "permissionValue": "View"
+        },
+        {
+          "permissionName": "learningMaterial",
+          "permissionValue": "View"
+        },
+        {
+          "permissionName": "user",
+          "permissionValue": "View"
+        }
+      ]
+    },
+    {
+
+      "id": "4",
+      "roleName" : "Student",
+      "permission": [
+        {
+          "permissionName": "syllabus",
+          "permissionValue": "Create"
+        },
+        {
+          "permissionName": "trainingProgram",
+          "permissionValue": "Full access"
+        },
+        {
+          "permissionName": "class",
+          "permissionValue": "Modify"
+        },
+        {
+          "permissionName": "learningMaterial",
+          "permissionValue": "Full access"
+        },
+        {
+          "permissionName": "user",
+          "permissionValue": "View"
+        }
+      ]
+    }
+  ],
+  "material": [
+    {
+      "unitID": "1",
+      "materialLink": "##",
+      "materialLinkName": ".NET Introduction overview.pdf",
+      "createBy": "Joseph",
+      "createOn": "12/03/2021"
+    },
+    {
+      "unitID": "1",
+      "materialLink": "##",
+      "materialLinkName": ".NET Introduction overview.pdf Tran Tu My",
+      "createBy": "Joseph",
+      "createOn": "12/03/2021"
+    },
+    {
+      "unitID": "1",
+      "materialLink": "##",
+      "materialLinkName": ".NET Introduction overview.pdf",
+      "createBy": "Joseph",
+      "createOn": "12/03/2021"
+    }
+  ]
+}
+

@@ -1,0 +1,76 @@
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+  [fullScreen]="true"
+  ><p style="color: white">Loading...</p></ngx-spinner
+>
+<div class="login-container">
+  <!-- For Login Heading -->
+  <div class="login-form-section">
+    <div class="login-content-section">
+      <h1 class="login-heading">FPT Intern Academy</h1>
+      <h1 class="login-heading">Food Order App</h1>
+      <small class="login-small-p">
+        If you don’t have the account, please contact
+        <a href="mailto:FA.HCM@fsoft.com.vn"> FA.HCM@fsoft.com.vn </a>
+      </small>
+    </div>
+
+    <form class="login-form" [formGroup]="loginForm" (ngSubmit)="submit()">
+      <div class="p-grid p-fluid login-userdata">
+        <div class="p-col-12 p-md-4">
+          <span class="p-float-label">
+            <input id="email" type="email" pInputText formControlName="email" />
+            <label for="float-input">Enter Email</label>
+          </span>
+
+          <div
+            *ngIf="submitted && loginForm.controls['email'].errors"
+            class="login-error"
+          >
+            <div *ngIf="loginForm.controls['email'].errors['required']">
+              Email is required.
+            </div>
+            <div *ngIf="loginForm.controls['email'].errors['email']">
+              You must enter correct email.
+            </div>
+          </div>
+        </div>
+
+        <div class="p-col-12 p-md-4">
+          <span class="p-float-label">
+            <input
+              id="float-input"
+              type="password"
+              pInputText
+              formControlName="password"
+            />
+            <label for="float-input">Password</label>
+          </span>
+
+          <!-- <div
+            *ngIf="submitted && loginForm.controls['email'].errors"
+            class="login-error"
+          >
+            <div *ngIf="loginForm && loginForm?.controls['password']?.errors['required']">
+              Password is required.
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="p-col-12 p-md-4 login-forgot-password">
+        <a routerLink="/signup"> Register account </a>
+        <p-button
+          [disabled]="loginForm!.invalid"
+          label="Sign in"
+          type="submit"
+        ></p-button>
+      </div>
+
+      <div class="p-col-12"></div>
+    </form>
+  </div>
+</div>

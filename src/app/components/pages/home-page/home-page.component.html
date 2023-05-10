@@ -1,0 +1,117 @@
+<section>
+  <app-header> </app-header>
+</section>
+<section>
+  <div class="hidden">
+    <h2>Sorry, we couldn't find any results</h2>
+  </div>
+  <div class="surface-overlay px-3 lg:px-6 flex surface-border flex-wrap">
+    <div
+      class="flex align-items-center flex-auto justify-content-center lg:col-6 sm:col-12"
+    >
+      <div class="p-input-icon-left w-7 p-input-filled my-4">
+        <i class="pi pi-search"></i>
+        <input
+          class="w-12"
+          type="text"
+          pInputText
+          placeholder="Search for food,..."
+          (change)="changeInputSearch($event)"
+          [(ngModel)]="valueChange"
+          (ngModelChange)="handleSearchItemByName()"
+        />
+      </div>
+    </div>
+    <div
+      class="flex align-items-center flex-auto justify-content-center lg:col-6 sm:col-12"
+    >
+      <div class="all-tags">
+        <ul class="tag-list flex flex-row flex-wrap">
+          <li class="tag-item">
+            <a
+              routerLink="/home"
+              (click)="handleFilterTags('All')"
+              class="tag-link"
+              >All</a
+            >
+          </li>
+          <li class="tag-item">
+            <a (click)="handleFilterTags('FastFood')" class="tag-link"
+              >FastFood</a
+            >
+          </li>
+          <li class="tag-item">
+            <a (click)="handleFilterTags('Lunch')" class="tag-link">Lunch</a>
+          </li>
+          <li class="tag-item">
+            <a (click)="handleFilterTags('Pizza')" class="tag-link">Pizza</a>
+          </li>
+          <li class="tag-item">
+            <a (click)="handleFilterTags('SlowFood')" class="tag-link"
+              >SlowFood</a
+            >
+          </li>
+          <li class="tag-item">
+            <a (click)="handleFilterTags('Hamburger')" class="tag-link"
+              >Hamburger</a
+            >
+          </li>
+          <li class="tag-item">
+            <a (click)="handleFilterTags('Soup')" class="tag-link">Soup</a>
+          </li>
+          <li class="tag-item">
+            <a (click)="handleFilterTags('Fry')" class="tag-link">Fry</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="section-content">
+    <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+      <div class="grid">
+        <div *ngFor="let item of foodsArray | async">
+          <app-product
+            [foodItem]="item"
+            (addFood)="addFoodToCart($event)"
+          ></app-product>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div
+    class="surface-section px-4 py-4 md:px-6 lg:px-8 text-center border-top-1 surface-border"
+  >
+    <img
+      src="../../../../assets/images/logo/food-code-logo-2.svg"
+      alt="logo"
+      height="50"
+    />
+    <div class="font-medium text-900 mt-3 mb-3">© 2023 FoodCode, Inc</div>
+    <p class="text-600 line-height-3 mt-0 mb-4">
+      All rights reserved. FoodCode is a registered trademark of FoodCode, Inc.
+    </p>
+    <div class="flex align-items-center justify-content-center">
+      <ul class="list-none p-0 m-0 flex">
+        <li class="flex align-items-center justify-content-center px-3">
+          <a href="" class="text-600">
+            <i class="pi pi-facebook"></i>
+          </a>
+        </li>
+        <li class="flex align-items-center justify-content-center px-3">
+          <a href="" class="text-600">
+            <i class="pi pi-twitter"></i>
+          </a>
+        </li>
+        <li class="flex align-items-center justify-content-center px-3">
+          <a href="" class="text-600">
+            <i class="pi pi-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

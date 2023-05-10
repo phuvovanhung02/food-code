@@ -1,0 +1,24 @@
+<!-- <div class="grid">
+  <header style="position: relative; z-index: 1000">
+
+  </header>
+  <p-button
+    style="position: absolute; top: 40%; left: -22px; z-index: 10000"
+    type="button"
+    class="mr-2"
+    (click)="visible = true"
+    *ngIf="!logoutInfo.isLogout"
+    icon="pi pi-arrow-right"
+  ></p-button> 
+  <p-sidebar [(visible)]="visible" [baseZIndex]="10000">
+    <app-sidebar></app-sidebar>
+  </p-sidebar>
+
+  <div class="box-body">
+   
+  </div>
+</div> -->
+<router-outlet></router-outlet>
+<p-toast key="error"></p-toast>
+<p-toast key="process"></p-toast>
+<p-toast key="success"></p-toast>

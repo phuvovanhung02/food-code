@@ -1,0 +1,121 @@
+<section>
+  <app-header></app-header>
+</section>
+<section style="width: 80%; margin: auto; min-height: 68vh">
+  <div class="my-cart justify-content-center flex">
+    <h1>
+      <i class="pi pi-shopping-cart" style="font-size: 1.5rem"></i>
+      My cart
+    </h1>
+  </div>
+
+  <div *ngIf="products.length > 0">
+    <div style="overflow-x: auto">
+      <table style="width: 100%">
+        <tr>
+          <th>No.</th>
+          <th>Image</th>
+          <th>Food Name</th>
+          <th>Quantity</th>
+          <th>Cooking Time</th>
+          <th>Price</th>
+          <th>Total Item</th>
+          <th></th>
+        </tr>
+        <tr *ngFor="let item of products; let i = index">
+          <th>{{ i + 1 }}</th>
+          <td>
+            <div class="card flex justify-content-center align-items-center">
+              <p-image
+                src="{{ item.imageUrl }}"
+                alt="Image"
+                width="100"
+              ></p-image>
+            </div>
+          </td>
+          <td>{{ item.name }}</td>
+          <td>
+            <input
+              type="number"
+              [(ngModel)]="item.quantity"
+              min="1"
+              style="width: 50px"
+              (input)="updateTotalPrice()"
+            />
+          </td>
+          <td>{{ item.cookTime }} minutes</td>
+          <td>{{ item.price }} $</td>
+          <td>{{ item.total }} $</td>
+          <td>
+            <button
+              pButton
+              pRipple
+              label="Delete"
+              icon="pi pi-trash"
+              class="p-button-danger"
+              (click)="removeItem(i); updateTotalPrice()"
+            ></button>
+          </td>
+        </tr>
+      </table>
+      <div class="text-right text-2xl">Total Price: {{ totalPrice }} $</div>
+    </div>
+    <div class="m-3 flex align-items-center justify-content-center">
+      <button
+        pButton
+        pRipple
+        class="p-button-success"
+        label="Order"
+        icon="pi pi-dollar"
+        routerLink="/order"
+      ></button>
+    </div>
+  </div>
+  <div *ngIf="products.length === 0">
+    <div class="flex justify-content-center align-items-center flex-column">
+      <p class="">There are no products in the cart</p>
+      <button
+        pButton
+        pRipple
+        class="p-button-success"
+        label="Buy now!"
+        icon="pi pi-shopping-cart"
+        routerLink="/home"
+      ></button>
+    </div>
+  </div>
+</section>
+<footer>
+  <div
+    class="surface-section px-4 py-4 md:px-6 lg:px-8 text-center border-top-1 surface-border"
+  >
+    <img
+      src="../../../../assets/images/logo/food-code-logo-2.svg"
+      alt="logo"
+      height="50"
+    />
+    <div class="font-medium text-900 mt-3 mb-3">© 2023 FoodCode, Inc</div>
+    <p class="text-600 line-height-3 mt-0 mb-4">
+      All rights reserved. FoodCode is a registered trademark of FoodCode, Inc.
+    </p>
+    <div class="flex align-items-center justify-content-center">
+      <ul class="list-none p-0 m-0 flex">
+        <li class="flex align-items-center justify-content-center px-3">
+          <a href="" class="text-600">
+            <i class="pi pi-facebook"></i>
+          </a>
+        </li>
+        <li class="flex align-items-center justify-content-center px-3">
+          <a href="" class="text-600">
+            <i class="pi pi-twitter"></i>
+          </a>
+        </li>
+        <li class="flex align-items-center justify-content-center px-3">
+          <a href="" class="text-600">
+            <i class="pi pi-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

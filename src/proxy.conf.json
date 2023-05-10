@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://intern-greenwich-be.onrender.com/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}

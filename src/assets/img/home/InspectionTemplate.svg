@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="55 25 150 150">
+  <g id="Form_list" data-name="Form list" transform="translate(-636 -397)">
+    <rect id="Rectangle_506" data-name="Rectangle 506" width="260" height="260" transform="translate(636 397)" fill="none"/>
+    <g id="Group_2074" data-name="Group 2074">
+      <g id="Group_324" data-name="Group 324" transform="translate(-1404 -6643)">
+        <g id="Group_323" data-name="Group 323" transform="translate(2105.044 7072.014)">
+          <path id="Path_524" data-name="Path 524" d="M68.411,132.987H5V5H131.911V25.755m0,42.515V25.755m0,0H28.033" transform="translate(-5 -5)" fill="none" stroke="#1b2f88" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+          <path id="Path_525" data-name="Path 525" d="M23,44v70.984H54.19" transform="translate(-3.641 -2.055)" fill="none" stroke="#5473e8" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+        </g>
+        <g id="Group_322" data-name="Group 322" transform="translate(2173.877 7141.796)">
+          <path id="Path_526" data-name="Path 526" d="M0,14.852l12.147,6.723L17.326,0" transform="translate(22.673 15.27) rotate(16)" fill="none" stroke="#21bdca" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+          <path id="Path_528" data-name="Path 528" d="M61.053,22.986A29.136,29.136,0,1,0,22.986,61.054" transform="translate(-5 -5)" fill="none" stroke="#21bdca" stroke-linecap="round" stroke-width="10"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

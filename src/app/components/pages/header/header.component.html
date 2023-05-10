@@ -1,0 +1,140 @@
+<header>
+  <div
+    class="surface-overlay px-3 py-3 lg:px-6 flex align-items-center justify-content-between border-bottom-1 surface-border"
+  >
+    <div class="home-logo flex align-items-center">
+      <img
+        class="logo-img cursor-pointer"
+        src="../../../../assets/images/logo/food-code-logo-2.svg"
+        alt=""
+        routerLink="/home"
+      />
+    </div>
+    <a
+      class="navbar-toggler p-ripple p-element cursor-pointer flex align-items-center lg:hidden text-700"
+      (click)="toggleNavbar()"
+    >
+      <i class="pi pi-bars text-4xl"></i>
+    </a>
+    <div
+      class="navbar-mask hidden-lg surface-overlay absolute lg:static left-0 z-1 shadow-2 lg:shadow-none w-full lg:w-auto lg:py-0"
+      [ngClass]="{ hidden: !navbarOpen }"
+    >
+      <ul
+        class="list-none p-0 m-0 flex flex-column lg:flex-row"
+        (click)="toggleNavbar()"
+      >
+        <li class="navbar-mask-item flex flex-column lg:flex-row">
+          <a
+            class="p-ripple p-element inline-flex align-items-center cursor-pointer border-right-2 lg:border-right-none lg:border-bottom-2 border-transparent hover:border-primary py-3 lg:py-0 px-6 lg:px-3 text-700 select-none text-xl lg:text-base font-medium lg:font-base w-full lg:w-auto"
+            routerLink="/home"
+          >
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="navbar-mask-item flex flex-column lg:flex-row">
+          <a
+            class="p-ripple p-element inline-flex align-items-center cursor-pointer border-right-2 lg:border-right-none lg:border-bottom-2 border-transparent hover:border-primary py-3 lg:py-0 px-6 lg:px-3 text-700 select-none text-xl lg:text-base font-medium lg:font-base w-full lg:w-auto"
+          >
+            <span>Page 2</span>
+          </a>
+        </li>
+        <li class="navbar-mask-item flex flex-column lg:flex-row">
+          <a
+            class="p-ripple p-element inline-flex align-items-center cursor-pointer border-right-2 lg:border-right-none lg:border-bottom-2 border-transparent hover:border-primary py-3 lg:py-0 px-6 lg:px-3 text-700 select-none text-xl lg:text-base font-medium lg:font-base w-full lg:w-auto"
+          >
+            <span>Page 3</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex hidden-sm-md">
+      <ul class="list-none p-0 m-0 flex">
+        <li class="flex align-items-center justify-content-center px-3">
+          <a
+            routerLink="/home"
+            class="cursor-pointer border-bottom-2 border-transparent hover:border-primary text-xl"
+            >Home</a
+          >
+        </li>
+        <li class="flex align-items-center justify-content-center px-3">
+          <a
+            routerLink="/home"
+            class="cursor-pointer border-bottom-2 border-transparent hover:border-primary text-xl"
+            >Page 2</a
+          >
+        </li>
+        <li class="flex align-items-center justify-content-center px-3">
+          <a
+            routerLink="/home"
+            class="cursor-pointer border-bottom-2 border-transparent hover:border-primary text-xl"
+            >Page 3</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="flex">
+      <ul class="list-none p-0 m-0 flex">
+        <li
+          class="flex align-items-center justify-content-center pr-3 relative"
+        >
+          <a
+            (click)="toggleOverlay()"
+            class="cursor-pointer border-bottom-2 border-transparent hover:border-primary"
+          >
+            <i class="pi pi-user text-xl"></i>
+            <span class="ml-3">Hi, {{ username }}</span></a
+          >
+          <div
+            [ngClass]="{ hidden: isOverlayHidden }"
+            id="overlay"
+            class="border-round surface-overlay p-3 shadow-2 absolute right-0 top-100 z-1 w-15rem origin-top"
+          >
+            <ul class="list-none p-0 m-0">
+              <li>
+                <a
+                  href=""
+                  class="cursor-pointer text-700 hover:text-900 hover:surface-100 border-round flex align-items-center px-3 py-2"
+                >
+                  <i class="pi pi-fw pi-box text-lg mr-2"> </i>
+                  <span>My Orders</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  routerLink="/profile"
+                  href=""
+                  class="cursor-pointer text-700 hover:text-900 hover:surface-100 border-round flex align-items-center px-3 py-2"
+                >
+                  <i class="pi pi-fw pi-user-edit text-lg mr-2"> </i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="cursor-pointer text-700 hover:text-900 hover:surface-100 border-round flex align-items-center px-3 py-2"
+                  (click)="logout()"
+                >
+                  <i class="pi pi-fw pi-sign-out text-lg mr-2"> </i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="flex align-items-center justify-content-center px-3">
+          <a
+            class="cursor-pointer border-bottom-2 border-transparent hover:border-primary relative"
+            badge="8"
+            routerLink="/cart"
+          >
+            <i class="pi pi-shopping-cart text-xl"></i>
+            <span class="cart-badge">{{ cartBadge }}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

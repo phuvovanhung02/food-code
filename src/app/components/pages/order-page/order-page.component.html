@@ -1,0 +1,243 @@
+<app-header></app-header>
+<!-- My main code here -->
+<p-toast></p-toast>
+<div class="main">
+  <div class="title ml-2 text-center">
+    <h1>Order</h1>
+  </div>
+  <!-- responsive food list -->
+  <div class="responsive p-2">
+    <div class="grid">
+      <div
+        class="food-information col-8 sm:col-12 md:col-12 lg:col-8 xl:col-8 mobile-list-food-items"
+      >
+        <div class="body-section">
+          <div class="body-section-content">
+            <ul
+              class="list-item p-0 m-0"
+              *ngFor="let item of foods; let i = index"
+            >
+              <!-- *ngFor="let item of products -->
+              <!-- {{item.imageUrl}} -->
+              <li class="food-list-item mb-2" *ngIf="foods.length > 0">
+                <div
+                  class="body-section-left-item p-3 flex flex-row justify-content-between border"
+                >
+                  <div class="logo border-img p-1">
+                    <img
+                      class="overflow-hidden food-img mobile-list-food-image"
+                      src="{{ item.imageUrl }}"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="content w-full justify-content-around flex flex-row align-items-center"
+                  >
+                    <div
+                      class="content-item mobile-content-item flex align-items-center flex-column"
+                    >
+                      <h3 class="content-title mt-0">Food Name</h3>
+                      <span>{{ item.name }}</span>
+                    </div>
+                    <div
+                      class="content-item mobile-content-item flex align-items-center flex-column mx-3"
+                    >
+                      <h3 class="content-title mt-0">Quantity</h3>
+                      <span>{{ item.quantity }}</span>
+                    </div>
+                    <div
+                      class="content-item mobile-content-item flex align-items-center flex-column"
+                    >
+                      <h3 class="content-title mt-0">Price</h3>
+                      <span>{{ item.price }} $</span>
+                    </div>
+                  </div>
+                  <div
+                    class="btn flex align-items-center justify-content-center"
+                  >
+                    <button
+                      (click)="removeItem(i); updateTotalPrice()"
+                      pButton
+                      pRipple
+                      type="button"
+                      class="btn-delete p-button-danger btn-delete-mobile"
+                    >
+                      <i class="pi pi-trash"></i>
+                      <span>&nbsp;&nbsp;</span>
+                      <span><b>Delete Food</b></span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div *ngIf="foods && foods.length === 0" class="text-center">
+              <h2>There is no food item</h2>
+              <button
+                pButton
+                pRipple
+                type="button"
+                icon="pi pi-angle-double-left"
+                label="Back"
+                class="p-button-raised p-button-danger"
+                routerLink="/cart"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="user-information col-4 sm:col-12 md:col-12 lg:col-4 xl:col-4 mobile-user-infor"
+      >
+        <div class="border p-3 mb-0">
+          <div class="field grid">
+            <label class="col-12 mb-2 md:col-2 md:mb-0"><b>User Name</b></label>
+            <div class="col-12 md:col-10">
+              <input
+                id="disabled-input"
+                type="text"
+                pInputText
+                disabled
+                value="{{ username }}"
+                class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+              />
+            </div>
+          </div>
+          <div class="field grid">
+            <label class="col-12 mb-2 md:col-2 md:mb-0"><b>Total</b></label>
+            <div class="col-12 md:col-10">
+              <div class="p-inputgroup">
+                <input
+                  type="text"
+                  pInputText
+                  disabled
+                  value="{{ totalPriceOrder }}"
+                  placeholder="Price"
+                />
+                <span class="p-inputgroup-addon">$</span>
+              </div>
+            </div>
+          </div>
+          <div class="field grid">
+            <label class="col-12 mb-2 md:col-2 md:mb-0"
+              ><b>Payment methods</b></label
+            >
+            <div class="field-radiobutton col-12 md:col-9 flex flex-wrap m-0">
+              <!-- Payment card -->
+              <div class="payment-item border-payment p-2 col-12 w-full">
+                <p-radioButton
+                  value="Card"
+                  [(ngModel)]="paymentMethods"
+                  inputId="payment1"
+                ></p-radioButton>
+                <span>&nbsp;&nbsp;</span>
+                <i class="pi pi-credit-card"></i>
+                <span>&nbsp;&nbsp;</span>
+                <label>Card</label>
+              </div>
+              <!-- End payment Card -->
+              <!-- Payment Paypal -->
+              <div class="payment-item border-payment p-2 my-2 col-12">
+                <p-radioButton
+                  value="Paypal"
+                  [(ngModel)]="paymentMethods"
+                  inputId="payment1"
+                ></p-radioButton>
+                <span>&nbsp;&nbsp;</span>
+                <i class="pi pi-paypal"></i>
+                <span>&nbsp;&nbsp;</span>
+                <label>Paypal</label>
+              </div>
+              <!-- End payment Paypal -->
+              <!-- Payment cash -->
+              <div class="payment-item border-payment p-2 col-12">
+                <p-radioButton
+                  value="Cash"
+                  [(ngModel)]="paymentMethods"
+                  inputId="payment1"
+                ></p-radioButton>
+                <span>&nbsp;&nbsp;</span>
+                <i class="pi pi-money-bill"></i>
+                <span>&nbsp;&nbsp;</span>
+                <label>Cash</label>
+              </div>
+              <!-- End payment cash -->
+            </div>
+          </div>
+          <div class="field grid">
+            <label class="col-12 mb-2 md:col-2 md:mb-0"><b>Address</b></label>
+            <div class="col-12 md:col-10">
+              <input
+                pInputText
+                value="{{ addressValue }}"
+                class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+              />
+            </div>
+          </div>
+          <div class="field grid">
+            <label class="col-12 mb-2 md:col-2 md:mb-0"><b>Note</b></label>
+            <div class="col-12 md:col-10">
+              <textarea
+                pInputTextarea
+                placeholder="Note here..."
+                class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+                style="height: 200px"
+              ></textarea>
+            </div>
+          </div>
+          <div class="btn flex justify-content-center">
+            <button
+              [disabled]="foods && foods.length === 0"
+              pButton
+              pRipple
+              type="button"
+              label="Confirm Order"
+              icon="pi pi-wallet"
+              class="p-button-success"
+              (click)="handleCreateOrderFood()"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map flex justify-content-center col-12 mt-5">
+    <div class="map-frame">
+      <div id="map" style="height: 100%; width: 100%"></div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div
+    class="surface-section px-4 py-4 md:px-6 lg:px-8 text-center border-top-1 surface-border"
+  >
+    <img
+      src="../../../../assets/images/logo/food-code-logo-2.svg"
+      alt="logo"
+      height="50"
+    />
+    <div class="font-medium text-900 mt-4 mb-3">© 2023 FoodCode, Inc</div>
+    <p class="text-600 line-height-3 mt-0 mb-4">
+      Anim sit tempor enim aute commodo consequat commodo consequat.
+    </p>
+    <div class="flex align-items-center justify-content-center">
+      <ul class="list-none p-0 m-0 flex">
+        <li class="flex align-items-center justify-content-center px-3">
+          <a href="" class="text-600">
+            <i class="pi pi-facebook"></i>
+          </a>
+        </li>
+        <li class="flex align-items-center justify-content-center px-3">
+          <a href="" class="text-600">
+            <i class="pi pi-twitter"></i>
+          </a>
+        </li>
+        <li class="flex align-items-center justify-content-center px-3">
+          <a href="" class="text-600">
+            <i class="pi pi-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<app-map></app-map>

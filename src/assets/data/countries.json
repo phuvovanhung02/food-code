@@ -1,0 +1,16 @@
+{
+  "data": [
+      {"name": "DevOps Foundation","day":31,"hours":97,"date":"23/07/2022","createdAdmin":"Warrior Tran"},
+      {"name": "DevOps Beginer","day":20,"hours":69,"date":"31/01/2022","createdAdmin":"King Jeans"},
+      {"name": "DevOps Advanced", "day":41,"hours":109,"date":"01/01/2022","createdAdmin":"Ba Chu Heo"},
+      {"name": "DevOps Foundation1","day":31,"hours":97,"date":"23/07/2022","createdAdmin":"Warrior Tran"},
+      {"name": "DevOps Beginer1","day":20,"hours":69,"date":"31/01/2022","createdAdmin":"King Jeans"},
+      {"name": "DevOps Advanced1", "day":41,"hours":109,"date":"01/01/2022","createdAdmin":"Ba Chu Heo"},
+      {"name": "DevOps Foundation2","day":31,"hours":97,"date":"23/07/2022","createdAdmin":"Warrior Tran"},
+      {"name": "DevOps Beginer2","day":20,"hours":69,"date":"31/01/2022","createdAdmin":"King Jeans"},
+      {"name": "DevOps Advanced2", "day":41,"hours":109,"date":"01/01/2022","createdAdmin":"Ba Chu Heo"},
+      {"name": "DevOps Foundation3","day":31,"hours":97,"date":"23/07/2022","createdAdmin":"Warrior Tran"},
+      {"name": "DevOps Beginer3","day":20,"hours":69,"date":"31/01/2022","createdAdmin":"King Jeans"},
+      {"name": "DevOps Advanced3", "day":41,"hours":109,"date":"01/01/2022","createdAdmin":"Ba Chu Heo"}
+  ]
+}

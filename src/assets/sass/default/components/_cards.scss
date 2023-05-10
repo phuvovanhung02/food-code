@@ -1,0 +1,229 @@
+/*     Card     */
+
+.card,
+.card-light {
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    background-color: $white-color;
+    -webkit-box-shadow: 0 2px 3px 1px rgb(69 65 78 / 10%);
+    -moz-box-shadow: 0 2px 3px 1px rgb(69 65 78 / 10%);
+    box-shadow: 0 2px 3px 1px rgb(69 65 78 / 10%);
+    border: 0;
+
+    .card-header {
+        padding: 1rem 1.25rem;
+        background-color: $transparent-bg;
+        border-bottom: 1px solid #ebecec !important;
+
+        &:first-child {
+            border-radius: 0;
+        }
+
+        .card-head-row {
+            display: flex;
+            align-items: center;
+
+            .card-tools {
+                margin-left: auto;
+                float: right;
+                padding-left: 15px;
+            }
+        }
+    }
+
+    .separator-solid {
+        border-top: 1px solid #ebecec;
+        margin: 15px 0;
+    }
+
+    .separator-dashed {
+        border-top: 1px dashed #ebecec;
+        margin: 15px 0;
+    }
+
+    .separator-dot {
+        border-top: 1px dotted #ebecec;
+        margin: 15px 0;
+    }
+
+    .full-width-separator {
+        margin: 15px -20px 15px;
+    }
+
+    .b-b1 {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    .card-footer {
+        background-color: $transparent-bg;
+        border-top: 1px solid #ebecec !important;
+        font-size: 13px;
+    }
+
+    .pull-in {
+        margin-left: -1.25rem;
+        margin-right: -1.25rem;
+
+        &.sparkline-fix {
+            margin-left: -1.35rem;
+            margin-right: -1.35rem;
+            margin-bottom: -3px;
+        }
+    }
+
+    .chart-as-background {
+        position: absolute;
+        bottom: 0;
+        width: calc(100% + 2px);
+    }
+
+    .card-action {
+        padding: 30px;
+        background-color: $transparent-bg;
+        line-height: 30px;
+        border-top: 1px solid #ebecec !important;
+        font-size: 14px;
+    }
+
+    .card-footer {
+        hr {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .legend {
+            display: inline-block;
+        }
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .card {
+        .card-header {
+            .card-head-row:not(.card-tools-still-right) {
+                flex-direction: column;
+                align-items: unset;
+
+                .card-tools {
+                    margin-left: 0;
+                    float: left;
+                    padding-left: 0;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+.card {
+    &.full-height {
+        height: calc(100% - 30px);
+    }
+}
+
+.card-space {
+    padding: 0 30px;
+
+    > .card-header,
+    > .card-body,
+    > .card-footer,
+    > .card-action {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+.card-with-nav {
+    .card-header {
+        border-bottom: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .card-body {
+        padding: 15px 25px !important;
+    }
+}
+
+.card-list {
+    padding: 10px 0;
+
+    .item-list {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 0;
+        align-items: center;
+
+        .info-user {
+            flex: 1;
+
+            .username,
+            a.username {
+                color: $primary-color;
+                font-size: 13px;
+                margin-bottom: 5px;
+                font-weight: $font-weight-normal;
+            }
+
+            .status {
+                font-size: 11px;
+                color: #7d7b7b;
+            }
+        }
+    }
+}
+
+.card-title {
+    margin: 0;
+    color: $body-text-color;
+    font-size: 20px;
+    font-weight: $font-weight-normal;
+    line-height: 1.6;
+
+    a,
+    a:hover,
+    a:focus {
+        color: $body-text-color;
+        text-decoration: none;
+    }
+}
+
+.card-sub {
+    display: block;
+    margin: 5px 0 10px 0;
+    font-size: 0.9rem;
+    background: #f7f8fa;
+    color: $body-text-color;
+    padding: 0.85rem 1.5rem;
+    border-radius: 4px;
+    line-height: 1.82;
+}
+
+.card-category {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #8d9498;
+    margin-bottom: 0;
+    word-break: normal;
+}
+
+label {
+    font-size: 14px;
+    font-weight: $font-weight-normal;
+    color: #8d9498;
+    margin-bottom: 0;
+}
+
+.card-transparent {
+    background: $transparent-bg !important;
+    box-shadow: none;
+    border-color: $transparent-bg !important;
+}
+
+.border-transparent {
+    border-color: transparent !important;
+}

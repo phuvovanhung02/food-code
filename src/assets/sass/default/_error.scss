@@ -1,0 +1,38 @@
+.error-layout {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+
+    &_inner {
+        padding: 20px;
+    }
+
+    &_title {
+        color: #000;
+        font-size: 5rem;
+
+        @media (max-width: $breakpoint-xs) {
+            font-size: 4rem;
+        }
+    }
+
+    &_desc {
+        color: #e41919;
+        font-size: 2.5rem;
+
+        @media (max-width: $breakpoint-xs) {
+            font-size: 2rem;
+        }
+    }
+
+    &_content {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+
+        @media (max-width: $breakpoint-xs) {
+            font-size: 1rem;
+        }
+    }
+}

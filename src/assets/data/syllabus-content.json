@@ -1,0 +1,182 @@
+{
+  "data": {
+    "id": 1,
+    "name": "Handy9",
+    "code": "Z3659",
+    "version": 1,
+    "duration": 21,
+    "time": 86,
+    "lastModifiedBy": "Adelaida Browder",
+    "lastModifiedOn": "1995-12-26T11:48:31.04",
+    "isActive": false,
+    "technicalRequirements": "6992SUL6O4G669J13",
+    "courseObjectives": "3V9R8N418194A1472A970R3NR297856637HL3H8XWHMW61BO689633N6A7YSU09O",
+    "level": "Basic",
+    "attendeeNumber": 15,
+    "trainingDeliveryPrinciple": "ZTZ14G5X2S6C6S5XI170QOPZM54AL3",
+    "quizCriteria": 25,
+    "assignmentCriteria": 34,
+    "finalCriteria": 57,
+    "passingGPA": 3,
+    "units": [
+      {
+        "session": 20,
+        "name": "Gilbert1963",
+        "lectures": [
+          {
+            "id": 5,
+            "name": "Hanes777",
+            "outputStandard": "36J89",
+            "duration": 37,
+            "lessonType": "Offline",
+            "deliveryType": "Exam",
+            "trainingMaterials": [
+              {
+                "materialId": 29,
+                "lectureId": 5,
+                "name": "Jacques1976",
+                "url": "https://www.shoeratioor.com/andwashi/athin/anionerathi.asp",
+                "createdBy": "20",
+                "createdOn": "1985-05-19T17:46:04.203"
+              }
+            ]
+          },
+          {
+            "id": 20,
+            "name": "Hawkins2028",
+            "outputStandard": "SAGB6",
+            "duration": 49,
+            "lessonType": "Offline",
+            "deliveryType": "7",
+            "trainingMaterials": [
+              {
+                "materialId": 1,
+                "lectureId": 20,
+                "name": "Juliana386",
+                "url": "http://ashisthor.es/hiwaseve/areedwas/and/waere.htm",
+                "createdBy": "5",
+                "createdOn": "1992-11-26T05:18:51.921"
+              },
+              {
+                "materialId": 20,
+                "lectureId": 20,
+                "name": "Donny1986",
+                "url": "https://www.entedle.be/buthisnot/thiingare/arebutou/entveing.php",
+                "createdBy": "20",
+                "createdOn": "1985-05-19T17:46:04.202"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "session": 21,
+        "name": "Gilbert1963",
+        "lectures": [
+          {
+            "id": 5,
+            "name": "Hanes777",
+            "outputStandard": "36J89",
+            "duration": 37,
+            "lessonType": "Offline",
+            "deliveryType": "Exam",
+            "trainingMaterials": [
+              {
+                "materialId": 29,
+                "lectureId": 5,
+                "name": "Jacques1976",
+                "url": "https://www.shoeratioor.com/andwashi/athin/anionerathi.asp",
+                "createdBy": "20",
+                "createdOn": "1985-05-19T17:46:04.203"
+              }
+            ]
+          },
+          {
+            "id": 20,
+            "name": "Hawkins2028",
+            "outputStandard": "SAGB6",
+            "duration": 49,
+            "lessonType": "Offline",
+            "deliveryType": "7",
+            "trainingMaterials": [
+              {
+                "materialId": 1,
+                "lectureId": 20,
+                "name": "Juliana386",
+                "url": "http://ashisthor.es/hiwaseve/areedwas/and/waere.htm",
+                "createdBy": "5",
+                "createdOn": "1992-11-26T05:18:51.921"
+              },
+              {
+                "materialId": 20,
+                "lectureId": 20,
+                "name": "Donny1986",
+                "url": "https://www.entedle.be/buthisnot/thiingare/arebutou/entveing.php",
+                "createdBy": "20",
+                "createdOn": "1985-05-19T17:46:04.202"
+              }
+            ]
+          }
+        ]
+      },
+      {
+
+        "session": 21,
+        "name": "Gilbert1963",
+        "lectures": [
+          {
+            "id": 5,
+            "name": "Hanes777",
+            "outputStandard": "36J89",
+            "duration": 37,
+            "lessonType": "Offline",
+            "deliveryType": "Exam",
+            "trainingMaterials": [
+              {
+                "materialId": 29,
+                "lectureId": 5,
+                "name": "Jacques1976",
+                "url": "https://www.shoeratioor.com/andwashi/athin/anionerathi.asp",
+                "createdBy": "20",
+                "createdOn": "1985-05-19T17:46:04.203"
+              }
+            ]
+          },
+          {
+            "id": 20,
+            "name": "Hawkins2028",
+            "outputStandard": "SAGB6",
+            "duration": 49,
+            "lessonType": "Offline",
+            "deliveryType": "7",
+            "trainingMaterials": [
+              {
+                "materialId": 1,
+                "lectureId": 20,
+                "name": "Juliana386",
+                "url": "http://ashisthor.es/hiwaseve/areedwas/and/waere.htm",
+                "createdBy": "5",
+                "createdOn": "1992-11-26T05:18:51.921"
+              },
+              {
+                "materialId": 20,
+                "lectureId": 20,
+                "name": "Donny1986",
+                "url": "https://www.entedle.be/buthisnot/thiingare/arebutou/entveing.php",
+                "createdBy": "20",
+                "createdOn": "1985-05-19T17:46:04.202"
+              }
+            ]
+          }
+        ]
+      }
+    ], 
+    "timeAllocation": {
+      "assignmentLab": 0,
+      "conceptLecture": 0,
+      "guideReview": 0,
+      "testQuiz": 0,
+      "exam": 100
+    }
+  }
+}

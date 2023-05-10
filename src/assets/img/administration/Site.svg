@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
+  <g id="Factory" transform="translate(-1107 -9548)">
+    <rect id="Rectangle_513" data-name="Rectangle 513" width="260" height="260" transform="translate(1107 9548)" fill="none"/>
+    <g id="Group_2080" data-name="Group 2080" transform="translate(-6.041 4.897)">
+      <g id="Group_127" data-name="Group 127" transform="translate(1162.5 9571.205)">
+        <path id="Path_353" data-name="Path 353" d="M33.953,131.343h-27a.95.95,0,0,1-.95-.95V57.752a.95.95,0,0,1,.95-.95H18.344a.95.95,0,0,0,.95-.95v-19.8a.949.949,0,0,1,.564-.868l37.508-16.67a.95.95,0,0,1,.771,0l37.508,16.67a.95.95,0,0,1,.564.868v19.8a.95.95,0,0,0,.95.95h21.365M33.953,131.343H70.1m-36.143,0V87.188a.95.95,0,0,1,.95-.95H69.146a.95.95,0,0,1,.95.95v44.155m0,0h84.037a.95.95,0,0,0,.95-.95V57.752a.95.95,0,0,0-.95-.95h-9.97m-25.638,0V6.95a.95.95,0,0,1,.95-.95h23.739a.95.95,0,0,1,.95.95V56.8m-25.638,0h25.638" transform="translate(0 0)" fill="none" stroke="#1b2f88" stroke-width="12"/>
+        <path id="Path_354" data-name="Path 354" d="M100,109.092V92.95a.95.95,0,0,1,.95-.95h12.344a.95.95,0,0,1,.95.95v16.143a.95.95,0,0,1-.95.95H100.95A.95.95,0,0,1,100,109.092Z" transform="translate(-4.74 -4.337)" fill="none" stroke="#21bdca" stroke-width="7"/>
+        <path id="Path_355" data-name="Path 355" d="M130,109.092V92.95a.95.95,0,0,1,.95-.95h12.344a.95.95,0,0,1,.95.95v16.143a.95.95,0,0,1-.95.95H130.95A.95.95,0,0,1,130,109.092Z" transform="translate(-6.253 -4.337)" fill="none" stroke="#21bdca" stroke-width="7"/>
+      </g>
+    </g>
+  </g>
+</svg>
